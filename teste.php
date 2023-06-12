@@ -1,5 +1,5 @@
 <?php
-
+/*
 // configurações para conexão com o banco de dados.
 $server   = "localhost";
 $user     = "SEU USUÁRIO DO BANCO DE DADOS";
@@ -50,3 +50,32 @@ $table .= '</table>';
 
 // exibição na tela
 echo $table;
+*/
+$table  = '<table>';
+$table .= '<thead>';
+$table .= '<tr>';
+$table .= '<td>Selecionar Cliente</td>';
+$table .= '<td>idCliente</td>';
+$table .= '<td>Nome</td>';
+$table .= '<td>Telefone</td>';
+$table .= '<td>Endereço</td>';
+$table .= '<td>Email</td>';
+$table .= '<td>Editar</td>';
+$table .= '<td>Excluir</td>';
+$table .= '</tr>';
+$table .= '</thead>';
+$table .= '<tbody>';
+
+$table .= '<tr>';
+        $table .= "<td>1</td>";
+        $table .= "<td>vasco</td>";
+        $table .= "<td>389980345</td>";
+        $table .= "<td>bfdr</td>";
+        $table .= "<td>vasco@gmail.com</td>";
+$table .= '</tr>';
+
+    $table .= '</tbody>';
+    $table .= '</table>';
+
+    echo $table;
+?>

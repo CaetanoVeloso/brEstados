@@ -47,11 +47,9 @@ $table .= '<tbody>';
 
 // laço de repetição para inclusão dos dados na tabela
 foreach($estados as $estado){
-    foreach($estado as $key){
-        $table.= '<tr>';
-            $table.= '<td>'.$key.'</td>';
-            $table.= "<td>-Item: {$key}</td>";
-        $table .= '</tr>';
+    foreach($estado as $info){
+        echo "<strong>Loja: {$info['name']} </strong><br>";
+    }
         /*
         $table.= "<td>{$key['capital']}</td>";
         $table.= "<td>{$key['area']}</td>";
@@ -81,8 +79,6 @@ foreach($estados as $estado){
         $table .= "<td><a class='bnt btn-info' href='client/delete/{$client->id}'>Excluir</a></td>";
     $table .= '</tr>';
     */
-}
-
 // fecahamento do html
 $table .= '</tbody>';
 $table .= '</table>';
@@ -124,8 +120,5 @@ echo "-Qtd: {$itens['qtd']} <br><br>";
 }
 }
 ?>
-
-
-
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Bandeira_de_Mato_Grosso.svg" alt="">
