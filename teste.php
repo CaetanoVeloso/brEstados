@@ -1,19 +1,5 @@
 <?php
 /*
-// configurações para conexão com o banco de dados.
-$server   = "localhost";
-$user     = "SEU USUÁRIO DO BANCO DE DADOS";
-$password = "SUA password DO BANCO DE DADOS";
-$dbname   = "DB_NAME";
-
-// instancia do PDO
-$pdo = new PDO(
-    'mysql:host='.$server.';dbname='.$dbname, $user, $password);
-
-// execução da query
-$statement = $pdo->query("SUA QUERY STRING");
-$clients   = $stmt->fetch();
-
 // montagem do html da tabela
 $table  = '<table>';
 $table .= '<thead>';
